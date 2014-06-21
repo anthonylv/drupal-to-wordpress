@@ -1,0 +1,208 @@
+body {
+	font-family: Verdana,Arial,"Bitstream Vera Sans",Arial,Helvetica;
+    font-size: 13px;
+	background-color: #6DBDDB;
+	color: #444;
+}
+
+p {
+	line-height: 18px;
+}
+
+h1, h2, h3, h4 {
+	color: #2763A5;
+}
+
+h1 {
+	font-size: 25px;
+}
+
+h2, h3, h4 {
+	font-family: "Trebuchet MS","Bitstream Vera Sans",Verdana,Arial,Helvetica,sans-serif;
+	color: #F29676;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: normal;
+}
+
+
+a {
+	color: #2763A5;
+}
+
+#container {
+	display:block;
+	width: 800px;
+	padding: 10px;
+	margin: 0px auto;
+	background-color: #ffffff;
+}
+
+#footer {
+    clear: both;
+    font-size: 10px;
+    height: 15px;
+	padding-top: 20px;
+    margin: 40px 0 5px 0;
+    text-align: center;
+	border-top: 4px solid #AAD370;
+}
+
+#navigation  {
+	text-align: left;
+	margin: 0 0 34px 0;
+	border-bottom: 4px solid #AAD370;	
+	padding: 0;
+	z-index: 30;
+}
+
+#navigation a {
+	text-transform: uppercase;
+	color: #444;
+}
+
+#navigation li {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display:inline-block;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #444444;
+}
+
+#navigation li a {
+	display: block;
+	margin: 0;
+	padding: 0px 15px;
+	font-weight: normal;
+	color: #444444;
+}
+
+#navigation li a:hover {
+	border: none;
+}
+
+fieldset {
+	border: 0 none;
+}
+
+.error {
+	border: solid 1px #c00;
+	padding: 5px;
+	background-color: #FFEBE8;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+label {
+	display:block;
+	line-height: 18px;
+	cursor: pointer;
+}
+
+select.multi,
+input.text {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	vertical-align: center;
+	display:block;
+}
+
+select.multi {
+	height: 144px;
+}
+
+input.button {
+}
+
+div.help {
+	border-top: 1px dashed #999999;
+	margin-top: 9px;
+}
+
+table {
+	border-collapse: collapse;
+	width:100%;
+	margin: 1.5em 0.5em 0.5em 0.5em;
+}
+
+caption {
+	color: #2763A5;
+	font-weight: bold;
+	text-align: left;
+	margin-bottom: 0.5em;
+}
+
+th {
+	text-align: left;
+}
+
+th, td {
+	padding: .5em;
+	border: 1px solid #999999;
+	width: 100px;
+}
+
+table.settings_table {
+}
+
+th.setting,
+td.setting {
+	padding: .5em;
+	width: 35%;
+}
+
+th.description,
+td.description {
+	padding: .5em;	
+	width: 65%;
+}
+
+table.analysis_table {
+}
+
+.analysis_table td {
+}
+
+th.property,
+td.property {
+	padding: .5em;
+	width: 25%;
+}
+
+th.problem_found,
+td.problem_found {
+	padding: .5em;
+	width: 75%;
+}
+
+table.problems_table {
+}
+
+caption.problems {
+	color: #f00;
+}
+
+ .problems_table td {
+	border: 1px solid #f00;
+}
+ .problems_table select {
+	margin: 10px 0 10px 0;
+}
+
+th.problem_property,
+td.problem_property {
+	padding: .5em;
+	border: 1px solid #f00;	
+	width: 25%;
+}
+
+th.problem_found,
+td.problem_found {
+	padding: .5em;
+	border: 1px solid #f00;	
+	width: 75%;
+}
