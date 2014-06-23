@@ -571,7 +571,11 @@ CREATE TABLE drupaldb.acc_redirects AS
 * Tables requred for these queries:
 * 	acc_users_with_comments: empty copy of wp_users
 * 	acc_users_add_commenters: empty copy of wp_users
+<<<<<<< HEAD
 * 	acc_wp_users: copy of wp_users from wordpress database containing users
+=======
+* 	wp_users: copy of wp_users from wordpress database containing users
+>>>>>>> 9069a6c7844a528fe3f0acd72f881b29de1e081c
 *
 */
 
