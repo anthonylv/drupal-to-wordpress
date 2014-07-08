@@ -18,7 +18,7 @@ function displaySetOptionsPage($wp_settings_array, $d_settings_array) {
 	$result = runFetchFromDatabase($d_settings_array, QUERY_DRUPAL_GET_POSTS, $errors);
 	$posts_count = count($result);
 
-	showHTMLHeader("Drupal migration", $errors);	
+	showHTMLHeader("Drupal migration", $errors);
 ?>
 	<form action="<?php step_form_action( ); ?>" method="post">
 

@@ -36,7 +36,7 @@ function displayAnalysisResultsPage($wp_settings_array, $d_settings_array) {
 		 
 	// Show the database analysis results
 	showHTMLHeader("Drupal database analysis", $errors);
-
+	
 	echo "<table class=\"analysis_table\"><caption>Drupal properties</caption><thead>";
 	echo "<th class=\"property\">Property</th><th class=\"found\">Found in Drupal</th></thead><tbody>";
 
@@ -67,6 +67,16 @@ function displayAnalysisResultsPage($wp_settings_array, $d_settings_array) {
 		echo "</tbody></table>";
 	} ?>
 	<form action="<?php step_form_action( ); ?>" method="post">
+		<input type="hidden" name="wp_host" id="wp_host" value="<?php esc_html_attr( $wp_settings_array['host'], true ) ?>">
+		<input type="hidden" name="d_host" id="d_host" value="<?php esc_html_attr( $d_settings_array['host'], true ) ?>">
+		<input type="hidden" name="wp_data" id="wp_data" value="<?php esc_html_attr( $wp_settings_array['data'], true ) ?>">
+		<input type="hidden" name="d_data" id="d_data" value="<?php esc_html_attr( $d_settings_array['data'], true ) ?>">
+		<input type="hidden" name="wp_user" id="wp_user" value="<?php esc_html_attr( $wp_settings_array['user'], true ) ?>">
+		<input type="hidden" name="d_user" id="d_user" value="<?php esc_html_attr( $d_settings_array['user'], true ) ?>">
+		<input type="hidden" name="wp_pass" id="wp_pass" value="<?php esc_html_attr( $wp_settings_array['pass'], true ) ?>">
+		<input type="hidden" name="d_pass" id="d_pass" value="<?php esc_html_attr( $d_settings_array['pass'], true ) ?>">
+		<input type="hidden" name="wp_char" id="wp_char" value="<?php esc_html_attr( $wp_settings_array['char'], true ) ?>">
+		<input type="hidden" name="d_char" id="d_char" value="<?php esc_html_attr( $d_settings_array['char'], true ) ?>">		
 	<?php step_submit( "Set options"); ?>
 	</form>
 	

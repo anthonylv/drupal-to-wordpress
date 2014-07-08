@@ -32,7 +32,7 @@ $step = isset( $_REQUEST[ 'step' ] ) ? intval( $_REQUEST[ 'step' ] ) : 0;
 
 if( $step > 0 ) {
 	if( !testDatabaseConnection($wp_settings_array, $errors) ) {
-		$step = 3;
+		$step = 4;
 	}	
 }
 
@@ -74,19 +74,19 @@ switch ( $step ) {
 		$errors = migrate($wp_settings_array, $d_settings_array, $options_array);
 		include "display_step03.migrate.inc.php";
 		displayResultsPage($wp_settings_array, $d_settings_array, $errors);
-/*
-print "<pre style='font-size:small'>";
-print_r($_POST);
-print '</pre>';
-print '<hr />';
-print "<pre style='font-size:small'>";
-print_r($options_array);
-print '</pre>';
-print '<hr />';
-*/
 		break;
-	case 3:
+	case 4:
 	default:
+	/*
+	print "<pre style='font-size:small'>";
+	print_r($_POST);
+	print '</pre>';
+	print '<hr />';
+	print "<pre style='font-size:small'>";
+	print_r($options_array);
+	print '</pre>';
+	print '<hr />';
+	*/
 		showErrorPage($errors);
 		break;
 }
